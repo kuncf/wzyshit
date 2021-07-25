@@ -1,4 +1,4 @@
-﻿<!doctype html><!--声明当前文档为html文档-->
+<!doctype html><!--声明当前文档为html文档-->
 <html lang="en"><!--语言为英语-->
 	<head><!--头部-->
 		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
@@ -20,7 +20,34 @@
 		</style>
 	</head>
 	<body onkeydown="doKeyDown(event)"><!--身体-->
+		
 	<center> <h2 style="color:#673c05">文子娅野外随地拉屎 羞愧 用箱子盖住！</h2></center>
+<div class="clas">
+	<center>
+	<button class="btnn" onclick="go('up')">↑</button>
+	<br>
+	<button class="btnn"  onclick="go('left')" style="margin-right: 100px">←</button>
+	<button class="btnn"  onclick="go('right')">→</button>
+	<br>
+	<button class="btnn"  onclick="go('down')">↓</button>
+	<style>
+	.btnn{
+		background-color: rgb(255, 72, 0);
+		color:white;
+		border:none;
+		width: 100px;
+		height: 100px;
+		transition-duration: 0.5s;
+		font-size: 30px;
+		border-radius: 100px;
+	}
+	.btnn:hover{
+		background-color: rgb(255, 108, 50);
+		transform: scale(0.95)
+	}
+	</style>
+</center>
+</div>
 		<div class="game">
 			<canvas id="canvas" width="560" height="560"></canvas>
 			<div id="msg"></div>
